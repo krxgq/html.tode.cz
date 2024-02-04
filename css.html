@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/darkmode.js"></script>
+    <script src="js/app.js"></script>
+    <title>CSS Basics Guide</title>
+</head>
+<body>
+  <header>
+    <p class="head">
+      <a href="index.html">
+        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 50 50">
+          <path d="M 24.960938 2.1015625 A 1.0001 1.0001 0 0 0 24.386719 2.3105469 L 1.3867188 20.210938 A 1.0001 1.0001 0 1 0 2.6132812 21.789062 L 4 20.708984 L 4 48 A 1.0001 1.0001 0 0 0 5 49 L 18.832031 49 A 1.0001 1.0001 0 0 0 19.158203 49 L 30.832031 49 A 1.0001 1.0001 0 0 0 31.158203 49 L 45 49 A 1.0001 1.0001 0 0 0 46 48 L 46 20.708984 L 47.386719 21.789062 A 1.0001 1.0001 0 1 0 48.613281 20.210938 L 25.613281 2.3105469 A 1.0001 1.0001 0 0 0 24.960938 2.1015625 z M 25 4.3671875 L 44 19.154297 L 44 47 L 32 47 L 32 29 A 1.0001 1.0001 0 0 0 31 28 L 19 28 A 1.0001 1.0001 0 0 0 18 29 L 18 47 L 6 47 L 6 19.154297 L 25 4.3671875 z M 20 30 L 30 30 L 30 47 L 20 47 L 20 30 z"  fill="var(--secondary-color)" ></path>
+        </svg>
+        </a>   
+      <a href="html.html">HTML</a>/<a href="css.html">CSS</a>
+    </p>
+    <button class="head" id="themeBut" onclick="ThemeMode()">Light</button>
+</header>
+
+<main>
+  <h1 id="main_title">CSS</h1>
+  <button id="toggle-nav" onclick="toggleNav()">▼</button>
+  <nav>
+    <ol>
+      <li><a href="#selectors">Selectors</a></li>
+      <li><a href="#properties">Properties</a></li>
+      <li><a href="#values">Values</a></li>
+      <li><a href="#boxmodel">Box Model</a></li>
+      <li><a href="#class_id">Classes and IDs</a></li>
+      <li><a href="#select_comb">Selectors Combinators</a></li>
+      <li><a href="#tips">Tips for Begginers</a></li>
+    </ol>
+    </nav>
+
+    <h1 id="selectors">Selectors</h1>
+    <div class="codeWindow">
+      <h2>Example</h2>
+      <pre>
+        <code>
+p {
+  color: blue;
+}      
+        </code>
+      </pre>
+    </div>
+
+    <div class="content">
+      <p>
+        - Selectors target HTML elements and apply styles to them. <br>For example, to style all paragraphs, you can use <strong><em>'p'</em></strong> as a selector.
+      </p>
+    </div>
+    <br><br>
+
+    <!-- CSS Variables -->
+    <h1 id="properties">Properties</h1>
+    <div class="codeWindow">
+      <h2>Example</h2>
+      <pre>
+        <code>
+p {
+  color: red;
+}
+
+        </code>
+      </pre>
+    </div>
+
+    <div class="content">
+      <p>
+        - CSS properties define how the selected elements should be styled. <br>They are paired with values. For example, the <strong><em>'color'</em></strong> property sets the text color.
+      </p>
+    </div>
+    <br><br>
+
+    
+    <h1 id="values">Values</h1>
+    <div class="codeWindow">
+      <h2>Example</h2>
+      <pre>
+        <code>
+p {
+  color: red;
+}
+        </code>
+      </pre>
+    </div>
+
+    <div class="content">
+      <p>Values are assigned to properties and define the specific style. <br>For example, the value <strong><em>'red'</em></strong> sets the text color to red.</p>
+    </div>
+    <br><br>
+
+    <h1 id="boxmodel">Box Model</h1>
+    <div class="content">
+      <img src="img/box_model.png" alt="box_model" ><br><br>
+      <p>The Box Model is a fundamental concept in CSS, representing how elements are rendered on the page.<br> It consists of content, padding, border, and margin.</p>
+    </div>
+
+    <h1 id="class_id">Classes and IDs</h1>
+    <div class="codeWindow">
+      <h2>Classes and IDs</h2>
+      <pre>
+        <code>
+.class-selector {
+  /* styles for elements with class="class-selector" */
+}
+
+#id-selector {
+  /* styles for elements with id="id-selector" */
+}
+
+        </code>
+      </pre>
+    </div>
+
+    <div class="content">
+      <p>Classes and IDs are used to target specific HTML elements for styling.<br Classes are denoted by a period <em>('.')</em>, and IDs are denoted by a hash <em>('#')</em>.</p>
+    </div>
+    <br><br>
+
+    <h1 id="select_comb">Selectors Combinators</h1>
+    <div class="codeWindow">
+      <h2>Selectors Combinators</h2>
+      <pre>
+        <code>
+/* Selects any <p> element inside a <div> */
+div p {
+  /* styles */
+}
+        </code>
+      </pre>
+    </div>
+
+    <div class="content">
+      Combinators are used to select elements based on their<br> relationship in the HTML structure.
+    </div>
+    <br><br>
+
+    <h1 id="tips">Tips for Begginers</h1>
+    <div class="content">
+      <ol>
+        <li><strong>Practice:</strong> Apply what you learn by creating simple web pages and experimenting with styles.</li>
+        <li><strong>Inspect Browser Tools:</strong> Use browser developer tools to inspect and modify styles in real-time.</li>
+        <li><strong>Understand Specificity:</strong> Learn about CSS specificity to resolve conflicts in style application.</li>
+        <li><strong>Stay Updated:</strong> CSS evolves, so stay updated with the latest features and best practices.</li>
+      </ol>
+    </div>
+   
+</main>
+
+</body>
+</html>

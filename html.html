@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en,cz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/darkmode.js"></script>
+  <script src="js/app.js"></script>
+  <title>HTML-CSS</title>
+</head>
+<body>
+  <header>
+    
+    <p class="head">
+      <a href="index.html">
+        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 50 50">
+          <path d="M 24.960938 2.1015625 A 1.0001 1.0001 0 0 0 24.386719 2.3105469 L 1.3867188 20.210938 A 1.0001 1.0001 0 1 0 2.6132812 21.789062 L 4 20.708984 L 4 48 A 1.0001 1.0001 0 0 0 5 49 L 18.832031 49 A 1.0001 1.0001 0 0 0 19.158203 49 L 30.832031 49 A 1.0001 1.0001 0 0 0 31.158203 49 L 45 49 A 1.0001 1.0001 0 0 0 46 48 L 46 20.708984 L 47.386719 21.789062 A 1.0001 1.0001 0 1 0 48.613281 20.210938 L 25.613281 2.3105469 A 1.0001 1.0001 0 0 0 24.960938 2.1015625 z M 25 4.3671875 L 44 19.154297 L 44 47 L 32 47 L 32 29 A 1.0001 1.0001 0 0 0 31 28 L 19 28 A 1.0001 1.0001 0 0 0 18 29 L 18 47 L 6 47 L 6 19.154297 L 25 4.3671875 z M 20 30 L 30 30 L 30 47 L 20 47 L 20 30 z" fill="var(--secondary-color)"></path>
+        </svg>
+      </a>   
+      <a href="html.html">HTML</a>/<a href="css.html">CSS</a>
+    </p>
+    <button class="head" id="themeBut" onclick="ThemeMode()">Light</button>
+  </header>
+  <main>
+    <h1 id="main_title">HTML</h1>
+
+    <button id="toggle-nav" onclick="toggleNav()">▼</button>
+  <nav>
+    <ol>
+      <li><a href="#docStructure">Document structure</a></li>
+      <li><a href="#heading">Headings</a></li>
+      <li><a href="#paragraphs">Paragraphs</a></li>
+      <li><a href="#link_lists">Links and lists</a></li>
+      <li><a href="#images">Images</a></li>
+      <li><a href="#tables">Tables</a></li>
+      <li><a href="#forms">Forms</a></li>
+      <li><a href="#generals">General Tips</a></li>
+    </ol>
+    </nav>
+
+    
+<h1 id="docStructure">Document structure</h1>
+  <div class="codeWindow">
+    <h2>Document structure</h2>
+    <pre>
+      <code>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+  &lt;meta charset="UTF-8"&gt;
+  &lt;meta name="viewport" content="width=device-width initial-scale=1.0"&gt;
+  &lt;title&gt;Your Title&lt;/title&gt;
+&lt;/head&gt;
+  &lt;body&gt;
+    Example text
+  &lt;/body&gt;
+ &lt;/html&gt;
+      </code>
+  </pre>
+  </div>
+
+  <div class="content">
+    <p>- <code>&lt;!DOCTYPE html&gt;</code>: Declares the HTML version.</p>
+    <p>- HTML documents start with <code>&lt;!DOCTYPE html&gt;</code> to specify the document type.</p>
+    <p>- The entire document is enclosed within <code>&lt;html&gt;</code> tags.</p>
+    <p>- Use <code>&lt;head&gt;</code> to include metadata like character set and viewport settings.</p>
+    <p>- Title your page with <code>&lt;title&gt;</code> inside the <head> to define what appears in the browser tab.</p>
+    <p>- The main content goes inside <code>&lt;body&gt;</code>.</p>
+    <p>- <code>&lt;body&gt;</code>: Contains the content of the HTML document.</p>
+  </div>
+<br><br>
+
+<h1 id="heading">Headings</h1>
+  <div class="codeWindow">
+    <h2>Headings</h2>
+    <pre>
+      <code>
+<h1><p>&lt;h1&gt;This is Heading 1&lt;/h1&gt;</p></h1>
+<h2><p>&lt;h2&gt;This is Heading 2&lt;/h2&gt;</p></h2>
+<p>&lt;!-- ... --&gt;</p>
+<h6><p>&lt;h6&gt;This is Heading 6&lt;/h6&gt;</p></h6>
+
+        </code>
+    </pre>
+  </div>
+  <div class="content">
+    <p>Use <code>&lt;h1&gt;</code> to <code>&lt;h6&gt;</code> for headings (h1 is the largest, h6 is the smallest).</p>
+  </div>
+<br><br>
+
+<h1 id="paragraphs">Paragraphs</h1>
+  <div class="codeWindow">
+    <h2>Paragraphs</h2>
+    <pre>
+      <code>
+&lt;p&gt;This is a paragraph of text.&lt;/p&gt;
+      </code>
+    </pre>
+  </div>
+  <div class="content">
+    <p>Define paragraphs with <code>&lt;p&gt;</code></p>
+  </div>
+<br><br>
+
+
+<h1 id="links_lists">Links and lists</h1>
+  <div class="codeWindow" id="linksCodeWindow">
+    <h2>Links</h2>
+    <pre>
+      <code>
+&lt;a href="https://www.example.com"&gt;<a href="example.com">Visit Example.com</a>&lt;/a&gt;
+        </code>
+    </pre>
+  </div>
+
+  <div class="content">
+    <p>Create hyperlinks with <code>&lt;a&gt;</code>.</p>
+  </div>
+  <br><br>
+
+
+  <div class="codeWindow">
+    <h2>Lists</h2>
+    <pre>
+        <code>
+&lt;ul&gt;
+  &lt;li&gt;Item 1&lt;/li&gt;
+  &lt;li&gt;Item 2&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Item 1&lt;/li&gt;
+  &lt;li&gt;Item 2&lt;/li&gt;
+&lt;/ol&gt;
+        
+      </code>
+    </pre>
+  </div>
+
+  <div class="content">
+    <p>Use <code>&lt;ul&gt;</code> for unordered lists (bulleted) and <code>&lt;ol&gt;</code> for ordered lists (numbered).<br>
+      List items are defined with <code>&lt;li&gt;</code>.</p>
+  </div>
+<br><br>
+
+<h1 id="images">Images</h1>
+  <div class="codeWindow">
+  <h2>Images</h2>
+  <pre>
+    <code>
+&lt;img src="image.jpg" alt="Description of the image"&gt;
+    </code>
+  </pre>
+  </div>
+  <div class="content">
+    <p>Use <code>&lt;img&gt;</code> to display an image.</p>
+  </div>
+  <br><br>
+
+<h1 id="tables">Tables</h1>
+  <div class="codeWindow">
+    <h2>Tables</h2>
+    <pre>
+      <code>
+&lt;table&gt;
+    &lt;tr&gt;
+        &lt;th&gt;Header 1&lt;/th&gt;
+        &lt;th&gt;Header 2&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Data 1&lt;/td&gt;
+        &lt;td&gt;Data 2&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;
+      </code>
+    </pre>
+  </div>
+
+  <div class="content">
+    <p>Define tables with <code>&lt;table&gt;</code>, rows with <code>&lt;tr&gt;</code>, headers with <code>&lt;th&gt;</code>, and data cells with <code>&lt;td&gt;</code>.</p>
+  </div>
+<br><br>
+
+<h1 id="forms">Forms</h1>
+  <div class="codeWindow">
+    <h2>Forms</h2>
+    <pre>
+      <code>
+&lt;form&gt;
+    &lt;label for="username"&gt;Username:&lt;/label&gt;
+    &lt;input type="text" id="username" name="username"&gt;
+    &lt;button type="submit"&gt;Submit&lt;/button&gt;
+&lt;/form&gt;
+      </code>
+    </pre>
+  </div>
+  <div class="content">
+    <p>Use <code>&lt;form&gt;</code> to create a form, <code>&lt;input&gt;</code> to create an input fields, <code>&lt;label&gt;</code> to create labels, and <code>&lt;button&gt;</code> to create buttons</p>
+  </div>
+<br><br>
+
+<h1 id="generals">General Tips:</h1>
+  <div class="content">
+    <ul>
+      <li>Always close your tags properly (e.g., <code>&lt;tag&gt;&lt;/tag&gt;</code>)</li>
+      <li>Use indentation for better readability.</li>
+      <li>Test your HTML in different browsers to ensure compatibility.</li>
+    </ul>
+  </div>
+
+  </main>
+</body>
+</html>

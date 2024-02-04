@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en,cz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/csspage.css">
+  <script src="js/darkmode.js"></script>
+  <script src="js/app.js"></script>
+  <title>HTML-CSS</title>
+</head>
+<body>
+  <header>
+    
+      <p class="head">
+        <a href="index.html">
+          <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 50 50">
+            <path d="M 24.960938 2.1015625 A 1.0001 1.0001 0 0 0 24.386719 2.3105469 L 1.3867188 20.210938 A 1.0001 1.0001 0 1 0 2.6132812 21.789062 L 4 20.708984 L 4 48 A 1.0001 1.0001 0 0 0 5 49 L 18.832031 49 A 1.0001 1.0001 0 0 0 19.158203 49 L 30.832031 49 A 1.0001 1.0001 0 0 0 31.158203 49 L 45 49 A 1.0001 1.0001 0 0 0 46 48 L 46 20.708984 L 47.386719 21.789062 A 1.0001 1.0001 0 1 0 48.613281 20.210938 L 25.613281 2.3105469 A 1.0001 1.0001 0 0 0 24.960938 2.1015625 z M 25 4.3671875 L 44 19.154297 L 44 47 L 32 47 L 32 29 A 1.0001 1.0001 0 0 0 31 28 L 19 28 A 1.0001 1.0001 0 0 0 18 29 L 18 47 L 6 47 L 6 19.154297 L 25 4.3671875 z M 20 30 L 30 30 L 30 47 L 20 47 L 20 30 z" fill="var(--secondary-color)"></path>
+          </svg>
+          </a>   
+        <a href="html.html">HTML</a>/<a href="css.html">CSS</a>
+      </p>
+      <button class="head" id="themeBut" onclick="ThemeMode()">Light</button>
+  </header>
+  <main>
+    <div id="mp_text">
+      <p>Welcome to html.tode.cz!</p>
+      <p>Explore the world of web development with our mini guide on HTML5 and CSS3.</p>
+
+      <img src="img/html_css_logo.png" alt="html_css_logo" width="100%" id="logo">
+
+      <h2>About <a href="html.html">HTML</a></h2>
+      <p>Learn the fundamentals of HTML (HyperText Markup Language), the backbone of web pages. Discover how to structure content using headings, paragraphs, and more.</p>
+      <a href="html.html">Explore HTML</a>
+      <br><br>
+      <h2>About <a href="css.html">CSS</a></h2>
+      <p>Dive into the styling world with CSS (Cascading Style Sheets). Enhance your web pages by applying styles, colors, and layouts to create visually appealing content.</p>
+      <a href="css.html">Explore CSS</a>
+    </div>
+    <div id="formular">
+      <h1>Contact form:</h1>
+      <br>
+      <form>
+        <label for="name">First name: </label>
+        <input type="text" name="name" id="name">
+        <br>
+        <label for="surname">Surname: </label>
+        <input type="text" name="surname" id="surname">
+        <br>
+        <label for="email">Email: </label>
+        <input type="email" name="email" id="email">
+        <br>
+        <label for="message">Message: </label>
+        <textarea name="message" id="message"></textarea>
+        <br>
+        <button type="submit" onclick="submitButton()">Submit</button>
+      </form>
+    </div>
+  </main>
+</body>
+</html>
